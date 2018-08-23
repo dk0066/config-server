@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://ssasia-eureka.ap-northeast-1.elasticbeanstalk.com/eureka/
+      defaultZone: http://ssasia-eureka.ap-northeast-1.elasticbeanstalk.com/eureka
       
 ssasia:
   data:
@@ -11,6 +11,6 @@ ssasia:
       maxLifetime: 1800000
       maxPoolSize: 10
       driverClassName: com.mysql.jdbc.Driver
-      jdbcUrl: jdbc:mysql://192.168.0.160:3306/ssasia_mapping_staging?createDatabaseIfNotExist=true&noAccessToProcedureBodies=true&useUnicode=true&characterEncoding=UTF-8
-      username: ssasia
-      password: 1qazxsw2@!~
+      jdbcUrl: jdbc:mysql://prodssasia.cofpgalbezja.ap-northeast-1.rds.amazonaws.com:3306/zedee_mapping?createDatabaseIfNotExist=true&noAccessToProcedureBodies=true&allowMultiQueries=true&autoReconnect=true
+      username: zedee
+      password: 5BmJNC5n6jcs4JF5
