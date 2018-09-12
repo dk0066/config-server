@@ -8,7 +8,7 @@ ssasia:
       maxLifetime: 1800000
       maxPoolSize: 10
       driverClassName: com.mysql.jdbc.Driver
-      jdbcUrl: jdbc:mysql://localhost:3306/ssasia_data?createDatabaseIfNotExist=true&noAccessToProcedureBodies=true&allowMultiQueries=true&autoReconnect=true
+      jdbcUrl: jdbc:mysql://192.168.0.160:3306/ssasia_data?createDatabaseIfNotExist=true&noAccessToProcedureBodies=true&allowMultiQueries=true&autoReconnect=true
       username: ssasia
       password: 1qazxsw2@!~
   results:
