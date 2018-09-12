@@ -20,4 +20,4 @@ ssasia:
       - 5
       - 37
   kafka:
-    bootstrapServers: 192.168.0.160:9092
+    bootstrapServers: 192.168.0.160
