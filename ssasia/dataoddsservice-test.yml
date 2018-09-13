@@ -6,15 +6,15 @@ ssasia:
       maxLifetime: 1800000
       maxPoolSize: 10
       driverClassName: com.mysql.jdbc.Driver
-      jdbcUrl: jdbc:mysql://192.168.0.160:3306/ssasia_data?createDatabaseIfNotExist=true&noAccessToProcedureBodies=true&useUnicode=true&characterEncoding=UTF-8
-      username: ssasia
+      jdbcUrl: jdbc:mysql://192.168.0.160:3306/zedee_game?createDatabaseIfNotExist=true&noAccessToProcedureBodies=true&useUnicode=true&characterEncoding=UTF-8
+      username: zedee
       password: 1qazxsw2@!~
     vip:
       host: 58.82.247.16
       port: 8090
       version: V021
-      username: Ss9010
-      password: zxc123
+      username: Ss9001
+      password: pwd456
       subscribeBookmakers:
       - 2
       - 5
