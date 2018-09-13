@@ -19,6 +19,9 @@ ssasia:
       - 2
       - 5
       - 37
+  kafka:
+    bootstrapServers: 192.168.0.160
+    
 spring:
   cloud:
     stream:
@@ -47,4 +50,7 @@ spring:
               default.value.serde: org.apache.kafka.common.serialization.Serdes$BytesSerde
             autoCreateTopics: true
             brokers:
+              - 192.168.0.160
+        binder:
+          brokers:
             - 192.168.0.160
