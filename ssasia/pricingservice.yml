@@ -17,3 +17,27 @@ ssasia:
     uri: http://192.168.0.160:9092/restful
     username: AUTO-PRICING
     token: c523d59fc61211e7bd7a6c0b840c4dc4
+
+spring:
+    stream:
+      bindings:
+        input:
+          destination: ssasia-data-input
+          contentType: application/json
+          consumer:
+            headerMode: raw
+        output:
+          destination: ssasia-data-input
+          contentType: application/json
+          producer:
+            headerMode: raw
+      kafka:
+        streams:
+          binder:
+            configuration:
+              commit.interval.ms: 1000
+              default.key.serde: org.apache.kafka.common.serialization.Serdes$LongSerde
+              default.value.serde: org.apache.kafka.common.serialization.Serdes$BytesSerde
+            autoCreateTopics: true
+            brokers:
+            - 192.168.0.160
