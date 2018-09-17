@@ -7,7 +7,7 @@ ssasia:
       maxPoolSize: 10
       driverClassName: com.mysql.jdbc.Driver
       jdbcUrl: jdbc:mysql://192.168.0.160:3306/zedee_game?useSSL=false&createDatabaseIfNotExist=true&noAccessToProcedureBodies=true&useUnicode=true&characterEncoding=UTF-8
-      username: ssasia
+      username: zedee
       password: 1qazxsw2@!~
     vip:
       host: 58.82.247.16
