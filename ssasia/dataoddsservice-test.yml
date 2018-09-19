@@ -16,6 +16,7 @@ ssasia:
       version: V021
       username: Ss9001
       password: pwd456
+      autoCreateEvent: true
       subscribeBookmakers:
       - 2
       - 5
