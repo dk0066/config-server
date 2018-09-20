@@ -1,0 +1,12 @@
+ssasia:
+  data:
+    datasource:
+      connectionTimeout: 30000
+      idleTimeout: 600000
+      maxLifetime: 1800000
+      maxPoolSize: 10
+      driverClassName: com.mysql.jdbc.Driver
+      jdbcUrl: jdbc:mysql://192.168.0.160:3306/?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+      schema: zedee_transaction
+      username: zedee
+      password: 1qazxsw2@!~
