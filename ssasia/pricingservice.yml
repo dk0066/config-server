@@ -21,11 +21,10 @@ spring:
     stream:
       bindings:
         input:
-          group: group_pricing
           destination: ssasia-data-input
+          group: group_pricing
           contentType: application/json
           consumer:
-            groupId: 8083
             headerMode: raw
         output:
           destination: ssasia-data-input
