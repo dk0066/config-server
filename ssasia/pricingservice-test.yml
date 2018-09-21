@@ -1,0 +1,46 @@
+ssasia:
+  name: zedee
+  profile: default
+  data:
+    datasource:
+      connectionTimeout: 30000
+      idleTimeout: 600000
+      maxLifetime: 1800000
+      maxPoolSize: 10
+      driverClassName: com.mysql.jdbc.Driver
+      jdbcUrl: jdbc:mysql://192.168.0.160:3306/?useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+      schema: zedee_game
+      username: zedee
+      password: 1qazxsw2@!~
+  bo:
+    uri: http://192.168.0.160:8082/restful
+    username: AUTO-PRICING
+    token: c523d59fc61211e7bd7a6c0b840c4dc4
+
+spring:
+    stream:
+      bindings:
+        input:
+          destination: ssasia-data-input
+          group: group_pricing
+          contentType: application/json
+          consumer:
+            headerMode: raw
+        output:
+          destination: ssasia-data-input
+          contentType: application/json
+          producer:
+            headerMode: raw
+      kafka:
+        streams:
+          binder:
+            configuration:
+              commit.interval.ms: 1000
+              default.key.serde: org.apache.kafka.common.serialization.Serdes$LongSerde
+              default.value.serde: org.apache.kafka.common.serialization.Serdes$BytesSerde
+            autoCreateTopics: true
+            brokers:
+            - 192.168.0.160
+        binder:
+          brokers:
+            - 192.168.0.160
