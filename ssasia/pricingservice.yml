@@ -21,7 +21,7 @@ spring:
     stream:
       bindings:
         input:
-          group: price_group
+          group: group_pricing
           destination: ssasia-data-input
           contentType: application/json
           consumer:
