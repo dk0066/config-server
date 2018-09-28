@@ -29,7 +29,7 @@ spring:
           consumer:
             headerMode: raw
         output:
-          destination: ssasia-data-result
+          destination: ssasia-data-input
           contentType: application/json
           producer:
             headerMode: raw
