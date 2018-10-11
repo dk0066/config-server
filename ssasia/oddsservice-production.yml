@@ -13,8 +13,8 @@ ssasia:
       host: 58.82.247.16
       port: 8090
       version: V021
-      username: Ss9001
-      password: pwd456
+      username: Ss9010
+      password: zxc123
       subscribeBookmakers:
       - 2
       - 5
