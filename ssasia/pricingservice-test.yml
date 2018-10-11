@@ -16,6 +16,7 @@ ssasia:
     token: c523d59fc61211e7bd7a6c0b840c4dc4
 
 spring:
+  cloud:
     stream:
       bindings:
         input:
@@ -25,7 +26,7 @@ spring:
           consumer:
             headerMode: raw
         output:
-          destination: ssasia-data-input
+          destination: ssasia-data-output
           contentType: application/json
           producer:
             headerMode: raw
