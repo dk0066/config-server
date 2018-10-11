@@ -1,6 +1,4 @@
 ssasia:
-  name: zedee
-  profile: default
   data:
     datasource:
       connectionTimeout: 30000
