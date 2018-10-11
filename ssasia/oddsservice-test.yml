@@ -11,11 +11,11 @@ ssasia:
       username: zedee
       password: 1qazxsw2@!~
     vip:
-      host: 58.82.247.16
+      host: 103.94.79.56
       port: 8090
       version: V021
-      username: Ss9004
-      password: aod123
+      username: Ss9001
+      password: pwd456
       autoCreateEvent: false
       subscribeBookmakers:
       - 2
