@@ -11,10 +11,10 @@ ssasia:
       username: zedee
       password: 5BmJNC5n6jcs4JF5
     rball:
-      url: testfeed.rball.com
-      port: 3432
-      username: 198odds01DEV
-      password: 198odds01DEV
+      url: feed.rball.com
+      port: 3440
+      username: 198odds02Feed
+      password: Ufogubimu227
       autoCreateEvent: false
   kafka:
     bootstrapServers: 10.188.128.251:9092
