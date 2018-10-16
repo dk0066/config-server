@@ -6,6 +6,48 @@ ssasia:
       maxLifetime: 1800000
       maxPoolSize: 10
       driverClassName: com.mysql.jdbc.Driver
-      jdbcUrl: jdbc:mysql://prodssasia.cofpgalbezja.ap-northeast-1.rds.amazonaws.com:3306/zedee_mapping?createDatabaseIfNotExist=true&noAccessToProcedureBodies=true&allowMultiQueries=true&autoReconnect=true
+      jdbcUrl: jdbc:mysql://prodssasia.cofpgalbezja.ap-northeast-1.rds.amazonaws.com:3306/?useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+      schema: zedee_game
       username: zedee
       password: 5BmJNC5n6jcs4JF5
+    rball:
+      url: testfeed.rball.com
+      port: 3432
+      username: 198odds01DEV
+      password: 198odds01DEV
+      autoCreateEvent: false
+  kafka:
+    bootstrapServers: 10.188.128.251:9092
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: ssasia-data-result
+          contentType: application/json
+          consumer:
+            headerMode: raw
+        output:
+          destination: ssasia-data-input
+          contentType: application/json
+          producer:
+            headerMode: raw
+        resultOut:
+          destination: ssasia-data-input
+          contentType: application/json
+          producer:
+            headerMode: raw
+      kafka:
+        streams:
+          binder:
+            configuration:
+              commit.interval.ms: 1000
+              default.key.serde: org.apache.kafka.common.serialization.Serdes$LongSerde
+              default.value.serde: org.apache.kafka.common.serialization.Serdes$BytesSerde
+            autoCreateTopics: true
+            brokers:
+            - 10.188.128.251
+        binder:
+          brokers:
+          - 10.188.128.251
