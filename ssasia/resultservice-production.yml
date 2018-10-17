@@ -17,7 +17,7 @@ ssasia:
       password: Ufogubimu227
       autoCreateEvent: false
   kafka:
-    bootstrapServers: 10.188.128.251:9092
+    bootstrapServers: 10.188.129.251:9092
 
 spring:
   cloud:
@@ -47,7 +47,7 @@ spring:
               default.value.serde: org.apache.kafka.common.serialization.Serdes$BytesSerde
             autoCreateTopics: true
             brokers:
-            - 10.188.128.251
+            - 10.188.129.251
         binder:
           brokers:
-          - 10.188.128.251
+          - 10.188.129.251
