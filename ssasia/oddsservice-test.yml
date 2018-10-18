@@ -33,6 +33,7 @@ spring:
           contentType: application/json
           consumer:
             headerMode: raw
+            autoOffsetReset: latest
         output:
           destination: ssasia-data-input
           contentType: application/json
@@ -48,9 +49,11 @@ spring:
           binder:
             configuration:
               commit.interval.ms: 1000
+              offset.reset: latest
               default.key.serde: org.apache.kafka.common.serialization.Serdes$LongSerde
               default.value.serde: org.apache.kafka.common.serialization.Serdes$BytesSerde
             autoCreateTopics: true
+            autoOffsetReset: latest
             brokers:
               - 192.168.0.160
         binder:
