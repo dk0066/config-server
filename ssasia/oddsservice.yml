@@ -4,20 +4,57 @@ ssasia:
       connectionTimeout: 30000
       idleTimeout: 600000
       maxLifetime: 1800000
-      maxPoolSize: 10
+      maxPoolSize: 4
       driverClassName: com.mysql.jdbc.Driver
-      jdbcUrl: jdbc:mysql://localhost:3306/ssasia_data?createDatabaseIfNotExist=true&noAccessToProcedureBodies=true&useUnicode=true&characterEncoding=UTF-8
-      username: ssasia
-      password: 1qazxsw2@!~
+      jdbcUrl: jdbc:mysql://localhost:3306/?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+      schema: ssasia_game
+      username: root
+      password: passw0rd!
     vip:
       host: 58.82.247.16
       port: 8090
       version: V021
-      username: Ss9004
-      password: aod123
+      username: Ss9211
+      password: qwe123
+      autoCreateEvent: false
       subscribeBookmakers:
       - 2
       - 5
       - 37
   kafka:
-    bootstrapServers: 192.168.0.160
+    bootstrapServers: localhost:9092
+    
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: ssasia-data-odds
+          contentType: application/json
+          consumer:
+            headerMode: raw
+            resetOffsets: true
+            startOffset: latest
+        output:
+          destination: ssasia-data-input
+          contentType: application/json
+          producer:
+            headerMode: raw
+        oddsOut:
+          destination: ssasia-data-odds
+          contentType: application/json
+          producer:
+            headerMode: raw
+      kafka:
+        streams:
+          binder:
+            configuration:
+              commit.interval.ms: 1000
+              default.key.serde: org.apache.kafka.common.serialization.Serdes$LongSerde
+              default.value.serde: org.apache.kafka.common.serialization.Serdes$BytesSerde
+            autoCreateTopics: true
+            brokers:
+              - localhost
+        binder:
+          brokers:
+            - localhost
