@@ -6,10 +6,10 @@ ssasia:
       maxLifetime: 1800000
       maxPoolSize: 10
       driverClassName: com.mysql.jdbc.Driver
-      jdbcUrl: jdbc:mysql://prodssasia.cofpgalbezja.ap-northeast-1.rds.amazonaws.com:3306/?useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&noAccessToProcedureBodies=true
+      jdbcUrl: jdbc:mysql://prodssasia.cofpgalbezja.ap-northeast-1.rds.amazonaws.com:3306/?useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
       schema: zedee_game
       username: zedee
-      password: 1qazxsw2@!~
+      password: 5BmJNC5n6jcs4JF5
   bo:
     uri: http://10.188.129.173:8082/restful
     username: AUTO-PRICING
