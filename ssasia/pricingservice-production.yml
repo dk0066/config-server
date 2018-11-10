@@ -21,7 +21,6 @@ spring:
       bindings:
         input:
           destination: ssasia-data-input
-          group: group_pricing
           contentType: application/json
           consumer:
             headerMode: raw
