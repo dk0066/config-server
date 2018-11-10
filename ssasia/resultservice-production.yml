@@ -41,6 +41,7 @@ spring:
       kafka:
         streams:
           binder:
+            application-id: result-service
             configuration:
               commit.interval.ms: 1000
               default.key.serde: org.apache.kafka.common.serialization.Serdes$LongSerde
