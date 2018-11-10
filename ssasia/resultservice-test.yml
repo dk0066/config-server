@@ -27,7 +27,6 @@ spring:
           destination: ssasia-data-result
           contentType: application/json
           consumer:
-            group: group-result
             headerMode: raw
         output:
           destination: ssasia-data-input
