@@ -38,6 +38,16 @@ spring:
           contentType: application/json
           producer:
             headerMode: raw
+        matchIn:
+          destination: rball-match-input
+          contentType: application/json
+          consumer:
+            headerMode: raw
+        matchOut:
+          destination: rball-match-input
+          contentType: application/json
+          producer:
+            headerMode: raw
       kafka:
         streams:
           binder:
