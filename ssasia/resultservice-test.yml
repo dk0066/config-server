@@ -15,7 +15,7 @@ ssasia:
       port: 3432
       username: 198odds01DEV
       password: 198odds01DEV
-      autoCreateEvent: true
+      autoCreateEvents: false
   kafka:
     bootstrapServers: 192.168.0.160:9092
 
