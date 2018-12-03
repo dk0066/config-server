@@ -15,7 +15,7 @@ ssasia:
       port: 3440
       username: 198odds02Feed
       password: Ufogubimu227
-      autoCreateEvent: false
+      autoCreateEvents: false
   kafka:
     bootstrapServers: 10.188.129.251:9092
 
