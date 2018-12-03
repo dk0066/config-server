@@ -16,7 +16,7 @@ ssasia:
       version: V021
       username: Ss9211
       password: qwe123
-      autoCreateEvent: false
+      autoCreateEvents: false
       subscribeBookmakers:
       - 2
       - 5
