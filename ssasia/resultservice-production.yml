@@ -13,8 +13,8 @@ ssasia:
     rball:
       url: feed.rball.com
       port: 3440
-      username: 198odds01Feed
-      password: Upenesene532
+      username: 198odds03Feed
+      password: Osafepiva536
       autoCreateEvents: false
   kafka:
     bootstrapServers: 10.188.129.251:9092
