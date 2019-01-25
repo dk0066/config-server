@@ -20,6 +20,8 @@ ssasia:
     bootstrapServers: 10.188.129.251:9092
 
 spring:
+  profiles:
+    active: production
   cloud:
     stream:
       bindings:
