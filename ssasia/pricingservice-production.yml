@@ -13,7 +13,7 @@ ssasia:
   bo:
     uri: http://10.188.129.173:8082/restful
     username: AUTO-PRICING
-    token: c523d59fc61211e7bd7a6c0b840c4dc4
+    token: f15b6c56aef9479987afb110f098cf33
 
 spring:
   cloud:
