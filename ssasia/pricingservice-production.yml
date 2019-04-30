@@ -14,8 +14,17 @@ ssasia:
     uri: http://10.188.129.173:8082/restful
     username: AUTO-PRICING
     token: f15b6c56aef9479987afb110f098cf33
-
+  alert:
+    enable: false
+    mailto: tony4718@hotmail.com
+    
 spring:
+  mail:
+    username: ssasia2019@outlook.com
+    password: ss1q2w3e!
+    host: smtp-mail.outlook.com
+    properties:
+      mail.smtp.starttls: true
   cloud:
     stream:
       bindings:
