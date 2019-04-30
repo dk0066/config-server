@@ -16,18 +16,27 @@ ssasia:
     uri: http://192.168.0.160:8082/restful
     username: AUTO-PRICING
     token: c523d59fc61211e7bd7a6c0b840c4dc4
+  alert:
+    enable: true
+    mailto: tony4718@hotmail.com
 
 spring:
+  mail:
+    username: ssasia2019@outlook.com
+    password: ss1q2w3e!
+    host: smtp-mail.outlook.com
+    properties:
+      mail.smtp.starttls: true
+  cloud:
     stream:
       bindings:
         input:
           destination: ssasia-data-input
-          group: group_pricing
           contentType: application/json
           consumer:
             headerMode: raw
         output:
-          destination: ssasia-data-input
+          destination: ssasia-data-output
           contentType: application/json
           producer:
             headerMode: raw
@@ -40,7 +49,7 @@ spring:
               default.value.serde: org.apache.kafka.common.serialization.Serdes$BytesSerde
             autoCreateTopics: true
             brokers:
-            - 192.168.0.160
+              - 192.168.0.160
         binder:
           brokers:
             - 192.168.0.160
