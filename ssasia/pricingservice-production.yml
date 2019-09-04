@@ -33,6 +33,11 @@ spring:
           contentType: application/json
           consumer:
             headerMode: raw
+        inputInplay:
+          destination: ssasia-odds-inplay
+          contentType: application/json
+          consumer:
+            headerMode: raw
         output:
           destination: ssasia-data-output
           contentType: application/json
