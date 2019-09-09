@@ -19,8 +19,6 @@ ssasia:
       autoCreateEvents: false
       subscribeBookmakers:
       - 2
-      - 5
-      - 37
   kafka:
     bootstrapServers: 10.188.129.251:9092
     
